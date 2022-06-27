@@ -16,11 +16,11 @@ interface RetrofitService {
     suspend fun getPersonalSanctionList(@Query("search") name: String): Response<List<PersonalSanctionsItem>>
 
     @GET("?")
-    suspend fun getCompanySanctionList(@Query("search") searchCompany: String): Response<CompanySanctionsItem>
+    suspend fun getCompanySanctionList(@Query("search") searchCompany: String): Response<List<CompanySanctionsItem>>
 
     companion object {
         const val BASE_URL = "https://sanctions-scanner.p.rapidapi.com/"
-        const val API_KEY = "6443e69d12msh83f17f7e2c4f099p1b8a92jsne890324bf419"
+        const val API_KEY = "885cc08d5amshb470a167dafe69cp1c465fjsnbe7a5869239e"
         const val API_HOST = "sanctions-scanner.p.rapidapi.com"
 
         fun create(client: OkHttpClient): RetrofitService {

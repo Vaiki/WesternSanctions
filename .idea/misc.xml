@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AS/WesternSanctions/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AS/WesternSanctions/app/src/main/res/layout/fragment_search.xml" value="0.33" />
+        <entry key="..\:/AS/WesternSanctions/app/src/main/res/layout/item_company.xml" value="0.1" />
+        <entry key="..\:/AS/WesternSanctions/app/src/main/res/layout/item_person.xml" value="0.18" />
       </map>
     </option>
   </component>

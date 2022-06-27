@@ -8,13 +8,12 @@ import com.example.westernsanctions.ui.MyViewModel
 
 class MainActivity : AppCompatActivity() {
 
-    private val viewModel: MyViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val textView:TextView = findViewById(R.id.tv_sanctions)
-        viewModel.getResultPersonalSanctions()
-        viewModel.personalSanctionsLiveData.observe(this,{textView.text = it.joinToString()})
+
+
 
     }
 }
