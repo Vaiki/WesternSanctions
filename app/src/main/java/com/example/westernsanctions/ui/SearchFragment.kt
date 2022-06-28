@@ -37,8 +37,8 @@ binding.btnSearch.setOnClickListener {
         displayCompanySanctionsList()
     }
     private fun displayCompanySanctionsList(){
-        viewModel.getResultCompanySanctions(binding.teSearchCompany.text.toString())
-        viewModel.companySanctionsLiveData.observe(viewLifecycleOwner,{
+        viewModel.getResultPersonalSanctions(binding.teSearchCompany.text.toString())
+        viewModel.personalSanctionsLiveData.observe(viewLifecycleOwner,{
             binding.rvSanctionsList.adapter = context?.let { it1 -> RVAdapter(it, it1) }
         })
     }

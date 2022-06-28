@@ -15,9 +15,9 @@ class MyViewModel : ViewModel() {
     val personalSanctionsLiveData = MutableLiveData<List<PersonalSanctionsItem>>()
     val companySanctionsLiveData = MutableLiveData<List<CompanySanctionsItem>>()
 
-    fun getResultPersonalSanctions() {
+    fun getResultPersonalSanctions(person:String) {
         viewModelScope.launch {
-            val response = RetrofitService.create(interceptor()).getPersonalSanctionList("putin")
+            val response = RetrofitService.create(interceptor()).getPersonalSanctionList(person)
             if (response.isSuccessful) {
                 personalSanctionsLiveData.postValue(response.body())
             }

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:hint="Ввердите компанию"
+        android:hint="Введите компанию"
         app:boxBackgroundColor="@android:color/transparent"
         app:boxStrokeWidthFocused="4dp"
         app:endIconMode="clear_text"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_search"
-        tools:listitem="@layout/item_company"
+        tools:listitem="@layout/item_personal"
 
         />
 
