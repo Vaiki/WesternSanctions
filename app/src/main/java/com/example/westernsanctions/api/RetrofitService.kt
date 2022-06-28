@@ -20,7 +20,7 @@ interface RetrofitService {
 
     companion object {
         const val BASE_URL = "https://sanctions-scanner.p.rapidapi.com/"
-        const val API_KEY = "885cc08d5amshb470a167dafe69cp1c465fjsnbe7a5869239e"
+        const val API_KEY = "20a5d2b787mshc81aa071b386f01p1fac49jsn3eebbbabf67f"
         const val API_HOST = "sanctions-scanner.p.rapidapi.com"
 
         fun create(client: OkHttpClient): RetrofitService {
